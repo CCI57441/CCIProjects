@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="GiftRegisterDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="GiftRegister">
+    <Key>
+      <PropertyRef Name="GiftId" />
+    </Key>
+    <Property Name="GiftId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Date" Type="DateTime" Precision="3" />
+    <Property Name="NameOfEmployee" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DateGiftWasReceived" Type="DateTime" Precision="3" />
+    <Property Name="GiftReceivedFrom" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DescriptionOfGiftReceived" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="DateGiftWasGiven" Type="DateTime" Precision="3" />
+    <Property Name="GiftGivenTo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DescriptionOfGiftGiven" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ActualCost" Type="Decimal" Precision="18" Scale="2" />
+  </EntityType>
+  <EntityContainer Name="GiftRegisterDBEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="GiftRegisters" EntityType="Self.GiftRegister" />
+  </EntityContainer>
+</Schema>

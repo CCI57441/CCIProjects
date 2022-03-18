@@ -1,0 +1,18 @@
+﻿@model IEnumerable<GiftRegister.Data.GiftEntertainment>
+
+@{
+    ViewBag.Title = "My Gift";
+    ViewBag.InitModule = "homeIndex";
+}
+
+
+@section scripts {
+
+    @*<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.2/angular.min.js"></script>
+
+        <script src="~/Scripts/angucomplete-alt.js"></script>*@
+          <script src="~/js/home-Index.js"></script>
+    }   
+@*<link href="http://maxcdn.bootstrapcdn.com/3.3.6/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/angucomplete-alt.css" rel="stylesheet" />*@
+<div data-ng-view=""></div>

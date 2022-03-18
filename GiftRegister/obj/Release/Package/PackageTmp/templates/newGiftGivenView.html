@@ -1,0 +1,150 @@
+﻿
+<div class="container">
+    <div id="giveId">
+        <h3>New Gift Given</h3>
+        <form class="well form-horizontal" name="newGiftGivenForm" novalidate data-ng-submit="Give()">
+            <fieldset>
+
+                <div class="form-group" style="display:none;">
+                    <label class="col-md-4 control-label">Entry Date </label>
+                    <div class="col-md-4 inputGroupContainer">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+                            <input name="Date" type="text" id="giveDate" />
+                        </div>
+                    </div>
+                </div>
+                <!--<input type="text" ng-model="date" mydatepicker />-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label">Name Of Employee</label>
+                    <div class="col-md-4 inputGroupContainer">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                            <input class="form-control input-md" name="NameOfEmployee" type="text" id="giveName" value="" required />
+                            <span class="error" data-ng-show="newGiftGivenForm.NameOfEmployee.$error.required">*</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-md-4 control-label">Date Gift Was Given</label>
+                    <div class="col-md-4 inputGroupContainer">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+                            <input class="form-control input-md" name="Date" type="text" data-ng-model="newGiftGiven.DateGiftWasGiven" givedatepicker required />
+                            <span class="error" data-ng-show="newGiftGivenForm.DateGiftWasGiven.$error.required">*</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="form-group">
+                    <label class="col-md-4 control-label">Description Of Gift Given</label>
+                    <div class="col-md-4 inputGroupContainer">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+                            <textarea class="form-control input-md" name="DescriptionOfGiftGiven" rows="5" cols="30" data-ng-model="newGiftGiven.DescriptionOfGiftGiven" required data-ng-minlength="5" />
+                            <span class="error" data-ng-show="newGiftGivenForm.DescriptionOfGiftGiven.$error.required">*</span>
+                            <span style="border:solid 1px red;" class="error" data-ng-show="newGiftGivenForm.DescriptionOfGiftGiven.$error.minlength">Minimum 5 Characters</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-md-4 control-label">Enter Name and Company</label>
+                    <div class="col-md-4 inputGroupContainer">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                            <input class="form-control input-md" name="GiftGivenTo" id="to" type="text" data-ng-model="newGiftGiven.GiftGivenTo" required data-ng-minlength="2" />
+                            <span class="error" data-ng-show="newGiftGivenForm.GiftGivenTo.$error.required">*</span>
+                            <span style="border:solid 1px red;" class="error" data-ng-show="newGiftGivenForm.GiftGivenTo.$error.minlength">Minimum 2 Characters</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="form-group">
+                    <label class="col-md-4 control-label">Actual/Estimated Rand Value (ZAR)</label>
+                    <div class="col-md-4 inputGroupContainer">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+                            <input class="form-control input-md" name="ActualCost" type="number" data-ng-model="newGiftGiven.ActualCost" required />
+                            <span class="error" data-ng-show="newGiftGivenForm.ActualCost.$error.required">*</span>
+                            <!--<span style="border:solid 1px red;" class="error" data-ng-show="newGiftGivenForm.ActualCost.$error.number">This is not a valid number</span>-->
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-4 control-label"></label>
+                    <div class="col-md-4">
+                        <button style="float:left;" type="submit" id="givebtn" class="btn btn-primary" value="Give" data-ng-disabled="newGiftGivenForm.$invalid">
+                            Send <span class="glyphicon glyphicon-send"></span>
+                        </button>
+                        <button style="float:left; margin-left:50%;" onclick="BackToLanding();" class="btn btn-danger">Back</button>
+                    </div>
+                </div>
+                <input type="hidden" id="hiddenFieldTo" name="hiddenFieldTo" value="">
+            </fieldset>
+        </form>
+    </div>
+</div>
+<div class="modal fade  preview-modal" data-backdrop="" id="basicGiven" role="dialog" aria-labelledby="basic" aria-hidden="true">
+    <div class="modal-dialog  modal-sm">
+        <div class="modal-content" style="background-color:#ffffff; border:solid 4px #44d775;margin-top:253px; left:-25px;">
+            <div class="modal-header" style="background-color:#44d775; height:15px;">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true" style="margin-top:-12px;">x</button>
+                <span class="glyphicon glyphicon-ok" style="color:yellow; font-size:large; top:-10px; left:115px;" aria-hidden="true"></span>
+                <h4 class="modal-title" id="myModalLabel" style="text-align:center;"></h4>
+            </div>
+            <p style="text-align:center; font-family:'Ebrima'; color:black; margin-top:15px;"> <strong>Gift Saved Successfully </strong></p>
+        </div>
+    </div>
+</div>
+<script src="../js/jquery-3.2.1.min.js"></script>
+<!--<script src="../Scripts/jquery-3.3.1.min.js"></script>-->
+<script src="../Scripts/bootstrap.min.js"></script>
+<script>
+
+    $(document).ready(function () {
+        var today = new Date();
+        var dd = today.getDate();
+        var mm = today.getMonth() + 1; //January is 0!
+
+        var yyyy = today.getFullYear();
+        if (dd < 10) {
+            dd = '0' + dd;
+        }
+        if (mm < 10) {
+            mm = '0' + mm;
+        }
+        var today = yyyy + '-' + mm + '-' + dd;
+
+        $.ajax({
+            type: "GET",
+            url: "/GiftRegister/Home/GetCurrentName",
+            data: "",
+            contenttype: "application/json; charset=utf-8",
+            datatype: "json",
+            success: function (data) {
+                $("#giveName").val(data);
+                $("#giveDate").val(today);
+            },
+            failure: function (response) {
+
+            }
+        });
+        $('body').on('click', '#givebtn', function () {
+
+            $('#basicGiven').modal('show');
+            setTimeout(function () {
+                //$("#basic").hide();
+                $("#basicGiven .close").click()
+                //window.location.reload()
+                //window.location.href = "#/newGiftGiven";
+                $("body").load(window.location.href, "#/newGiftGiven");
+            }, 500);
+        });
+
+    });
+
+</script>

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="BDGiftsRegisterModelStoreContainer" CdmEntityContainer="BDGiftsRegisterEntities">
+    <EntitySetMapping Name="TblGiftRegs">
+      <EntityTypeMapping TypeName="BDGiftsRegisterModel.TblGiftReg">
+        <MappingFragment StoreEntitySet="TblGiftReg">
+          <ScalarProperty Name="GiftId" ColumnName="GiftId" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="NameOfEmployee" ColumnName="NameOfEmployee" />
+          <ScalarProperty Name="DateGiftWasReceived" ColumnName="DateGiftWasReceived" />
+          <ScalarProperty Name="GiftReceivedFrom" ColumnName="GiftReceivedFrom" />
+          <ScalarProperty Name="DescriptionOfGiftReceived" ColumnName="DescriptionOfGiftReceived" />
+          <ScalarProperty Name="DateGiftWasGiven" ColumnName="DateGiftWasGiven" />
+          <ScalarProperty Name="GiftGivenTo" ColumnName="GiftGivenTo" />
+          <ScalarProperty Name="DescriptionOfGiftGiven" ColumnName="DescriptionOfGiftGiven" />
+          <ScalarProperty Name="ActualCost" ColumnName="ActualCost" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

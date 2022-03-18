@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BDGiftsRegisterModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'BDGiftsRegister.dbo.TblGiftReg' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="TblGiftReg">
+    <Key>
+      <PropertyRef Name="GiftId" />
+    </Key>
+    <Property Name="GiftId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Date" Type="datetime" />
+    <Property Name="NameOfEmployee" Type="nvarchar" MaxLength="50" />
+    <Property Name="DateGiftWasReceived" Type="datetime" />
+    <Property Name="GiftReceivedFrom" Type="nvarchar" MaxLength="50" />
+    <Property Name="DescriptionOfGiftReceived" Type="nvarchar(max)" />
+    <Property Name="DateGiftWasGiven" Type="datetime" />
+    <Property Name="GiftGivenTo" Type="nvarchar(max)" />
+    <Property Name="DescriptionOfGiftGiven" Type="nvarchar(max)" />
+    <Property Name="ActualCost" Type="decimal" Precision="18" Scale="0" />
+  </EntityType>
+  <EntityContainer Name="BDGiftsRegisterModelStoreContainer">
+    <EntitySet Name="TblGiftReg" EntityType="Self.TblGiftReg" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [TblGiftReg].[GiftId] AS [GiftId], 
+    [TblGiftReg].[Date] AS [Date], 
+    [TblGiftReg].[NameOfEmployee] AS [NameOfEmployee], 
+    [TblGiftReg].[DateGiftWasReceived] AS [DateGiftWasReceived], 
+    [TblGiftReg].[GiftReceivedFrom] AS [GiftReceivedFrom], 
+    [TblGiftReg].[DescriptionOfGiftReceived] AS [DescriptionOfGiftReceived], 
+    [TblGiftReg].[DateGiftWasGiven] AS [DateGiftWasGiven], 
+    [TblGiftReg].[GiftGivenTo] AS [GiftGivenTo], 
+    [TblGiftReg].[DescriptionOfGiftGiven] AS [DescriptionOfGiftGiven], 
+    [TblGiftReg].[ActualCost] AS [ActualCost]
+    FROM [dbo].[TblGiftReg] AS [TblGiftReg]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>

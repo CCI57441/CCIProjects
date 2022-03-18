@@ -1,0 +1,266 @@
+﻿
+
+<div style="background:#121f47; color:#fff; border-radius:5px; margin-top:10px; margin-left:100px; width:auto; height:auto; text-align:center;">
+
+    <span>Are you receiving?</span>
+    <label for="chkYes">
+
+        <input id="first" type="radio" name="chkReceiver" value="yes" checked>
+        Yes
+    </label>
+    <label for="chkNo">
+        <input id="other" type="radio" name="chkReceiver" value="no">
+        No
+    </label>
+</div>
+<div class="container">
+    <div id="receiveId">
+        <h3>New Gift Received</h3>
+        <form class="well form-horizontal" name="newGiftReceivedForm">
+            <fieldset>
+
+                <div class="form-group" style="display:none;">
+                    <label class="col-md-4 control-label">Entry Date </label>
+                    <div class="col-md-4 inputGroupContainer">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+                            <input name="Date" type="text" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-md-4 control-label">Name Of Employee</label>
+                    <div class="col-md-4 inputGroupContainer">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                            <input name="NameOfEmployee" type="text" id="todayDate" />
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-md-4 control-label">Date Gift Was Received</label>
+                    <div class="col-md-4 inputGroupContainer">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+                            <input name="Date" type="text" />
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="form-group">
+                    <label class="col-md-4 control-label">Description Of Gift Received</label>
+                    <div class="col-md-4 inputGroupContainer">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+                            <textarea name="DescriptionOfGiftReceived" rows="5" cols="30" />
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-md-4 control-label">Gift Received From</label>
+                    <div class="col-md-4 inputGroupContainer">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                            <input name="GiftReceivedFrom" id="from" type="text" placeholder="Enter name or company..." />
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-md-4 control-label">Actual Cost</label>
+                    <div class="col-md-4 inputGroupContainer">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+                            <input name="ActualCost" type="text" />
+
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-4 control-label"></label>
+                    <div class="col-md-4">
+                        <button type="submit" id="receivebtn" class="btn btn-primary" value="Receive">
+                            Send <span class="glyphicon glyphicon-send"></span>
+                        </button>
+                    </div>
+                </div>
+
+
+                <input type="hidden" id="hiddenFieldFrom" name="hiddenFieldFrom" value="">
+            </fieldset>
+        </form>
+    </div>
+
+    <div id="giveId">
+        <h3>New Gift Given</h3>
+        <form class="well form-horizontal" name="newGiftGivenForm">
+            <fieldset>
+
+                <div class="form-group" style="display:none;">
+                    <label class="col-md-4 control-label">Entry Date </label>
+                    <div class="col-md-4 inputGroupContainer">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+                            <input name="Date" type="text">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-md-4 control-label">Name Of Employee</label>
+                    <div class="col-md-4 inputGroupContainer">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                            <input name="NameOfEmployee" type="text" required />
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-md-4 control-label">Date Gift Was Given</label>
+                    <div class="col-md-4 inputGroupContainer">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-calendar" id="datepicker"></i></span>
+                            <input name="Date" type="text" />
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="form-group">
+                    <label class="col-md-4 control-label">Description Of Gift Given</label>
+                    <div class="col-md-4 inputGroupContainer">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+                            <textarea name="DescriptionOfGiftGiven" rows="5" cols="30" />
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-md-4 control-label">Gift Given</label>
+                    <div class="col-md-4 inputGroupContainer">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                            <input name="GiftGivenTo" id="to" type="text" placeholder="Enter name or company..." required />
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-md-4 control-label">Actual Cost</label>
+                    <div class="col-md-4 inputGroupContainer">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+                            <input name="ActualCost" type="text" />
+
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-4 control-label"></label>
+                    <div class="col-md-4">
+                        <button type="submit" id="givebtn" class="btn btn-primary" value="Give" data-ng-disabled="newGiftGivenForm.$invalid">
+                            Send <span class="glyphicon glyphicon-send"></span>
+                        </button>
+                    </div>
+                </div>
+                <input type="hidden" id="hiddenFieldFrom" name="hiddenFieldFrom" value="">
+            </fieldset>
+        </form>
+    </div>
+</div>
+<div class="modal fade  preview-modal" data-backdrop="" id="basic" role="dialog" aria-labelledby="basic" aria-hidden="true">
+    <div class="modal-dialog  modal-sm">
+        <div class="modal-content" style="background-color:#ffffff; borderolid 4px #44d775;margin-top:253px; left:-25px;">
+            <div class="modal-header" style="background-color:#44d775; height:15px;">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true" style="margin-top:-12px;">x</button>
+                <span class="glyphicon glyphicon-ok" style="color:yellow; font-size:large; top:-10px; left:115px;" aria-hidden="true"></span>
+                <h4 class="modal-title" id="myModalLabel" style="text-align:center;"></h4>
+            </div>
+            <p style="text-align:center; font-family:'Ebrima'; color:black; margin-top:15px;"> <strong> Gift Saved Successfully </strong></p>
+        </div>
+    </div>
+</div>
+
+<script>
+
+        $(document).ready(function () {
+
+            $('body').on('click', '#receivebtn', function () {
+                $('#basic').modal('show');
+                setTimeout(function () {
+                    $("#basic").hide();
+
+                }, 3000);
+            });
+
+            $('body').on('click', '#givebtn', function () {
+                $('#basic').modal('show');
+                setTimeout(function () {
+                    $("#basic").hide();
+
+                }, 3000);
+            });
+
+            $("#to").autocomplete({
+                source: function (request, response) {
+                    $.ajax({
+                        url: '/GiftRegister/Home/GetName',
+                        type: "POST",
+                        dataType: "json",
+                        data: { Prefix: request.term },
+                        success: function (data) {
+                            response($.map(data, function (item) {
+                                return { label: item.firstName + "  " + item.lastName, value: item.firstName + "  " + item.lastName, id: item.samAccountName };
+                            }));
+                        }
+                    });
+
+                },
+                messages: {
+                    noResults: "", results: ""
+                },
+                select: function (event, ui) {
+                    $("#hiddenFieldTo").val(ui.item.id);
+                }
+            });
+
+            $("#from").autocomplete({
+                source: function (request, response) {
+                    $.ajax({
+                        url: '/GiftRegister/Home/GetName',
+                        type: "POST",
+                        dataType: "json",
+                        data: { Prefix: request.term },
+                        success: function (data) {
+                            response($.map(data, function (item) {
+                                return { label: item.firstName + "  " + item.lastName, value: item.firstName + "  " + item.lastName, id: item.samAccountName };
+                            }));
+                        }
+                    });
+
+                },
+                messages: {
+                    noResults: "", results: ""
+                },
+                select: function (event, ui) {
+                    $("#hiddenFieldFrom").val(ui.item.id);
+                }
+            });
+
+
+        });
+</script>

@@ -1,0 +1,71 @@
+﻿compulsoryfield {
+    color: red
+}
+cciFooter {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(18 31 71);
+    color: #fff;
+    text-align: center;
+}
+span.title {
+    font-size: 36px;
+    font-weight: 700;
+    position: relative;
+    top: -30px;
+    left: 20px;
+    color: #ffffff;
+}
+.newgift {
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 1px 0px 0px #222; /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+    -moz-box-shadow: 0px 1px 0px 0px #222; /* Firefox 3.5 - 3.6 */
+    box-shadow: 0px 1px 0px 0px #222; /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+}
+#giving {
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 1px 0px 0px #222; /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+    -moz-box-shadow: 0px 1px 0px 0px #222; /* Firefox 3.5 - 3.6 */
+    box-shadow: 0px 1px 0px 0px #222; /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+}
+
+#receiving {
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 1px 0px 0px #222; /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+    -moz-box-shadow: 0px 1px 0px 0px #222; /* Firefox 3.5 - 3.6 */
+    box-shadow: 0px 1px 0px 0px #222; /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+}
+
+#giving:hover {
+    opacity: 0.7;
+    border: solid 1px purple;
+    color: purple !important;
+    cursor: pointer;
+}
+
+#receiving:hover {
+    opacity: 0.7;
+    border: solid 1px blue;
+    color: blue !important;
+    cursor: pointer;
+}
+
+#giftGive {
+    color: #fff;
+    font-size: 20px;
+}
+
+#giftReceive {
+    color: #fff;
+    font-size: 20px;
+}
+span.header_giftreg {
+    font-family: 'Eurostile Extended', sans-serif;
+    color: #A5A5A5;
+    font-size: 36px;
+    padding: 2px;
+    position: absolute;
+    top: 2px;
+}

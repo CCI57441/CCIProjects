@@ -1,0 +1,119 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: red;
+    color: white;
+    text-align: center;
+}
+#giving {
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 1px 0px 0px #222; /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+    -moz-box-shadow: 0px 1px 0px 0px #222; /* Firefox 3.5 - 3.6 */
+    box-shadow: 0px 1px 0px 0px #222; /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+}
+
+#receiving {
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 1px 0px 0px #222; /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+    -moz-box-shadow: 0px 1px 0px 0px #222; /* Firefox 3.5 - 3.6 */
+    box-shadow: 0px 1px 0px 0px #222; /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+}
+
+#giving:hover {
+    opacity: 0.7;
+    border: solid 1px purple;
+    color: purple !important;
+    cursor: pointer;
+}
+
+#receiving:hover {
+    opacity: 0.7;
+    border: solid 1px blue;
+    color: blue !important;
+    cursor: pointer;
+}
+
+#giftGive {
+    color: #fff;
+    font-size: 20px;
+}
+
+#giftReceive {
+    color: #fff;
+    font-size: 20px;
+}
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+@font-face {
+font-family: 'eurostile_extended';
+src: url('fonts/eurostile-extended.eot');
+src: url('fonts/eurostile-extended.eot?#iefix') format('embedded-opentype'),
+url('fonts/eurostile-extended.woff') format('woff'),
+url('fonts/eurostile-extended.ttf') format('truetype'),
+url('fonts/eurostile-extended.svg#fontscorecome-eurostile-extended') format('svg');
+font-weight: lighter;
+font-style: normal;
+}
+span.header_giftreg {
+    font-family: 'Eurostile Extended', sans-serif;
+    color: #A5A5A5;
+    font-size: 36px;
+    padding: 2px;
+    position: absolute;
+    top: 2px;
+}
+navgb-color {
+    background: rgb(18 31 71);
+    color: #fff;
+}
+i.giftIcon {
+    color: #121f47;
+    font-size: 300px;
+    
+}
+.datep:focus {
+    border-color: #3c8dbc !important;
+    box-shadow: none;
+}
+.datep {
+    border-radius: 0px;
+    border-color: #62666c33;
+    background-color: #fff;
+    width: 450px;
+    height: 32px;
+}
+#nameError {
+    display: none;
+    font-size: 0.8em;
+}
+
+    #nameError.visible {
+        display: block;
+    }
+
+input.invalid {
+    border-color: red;
+}

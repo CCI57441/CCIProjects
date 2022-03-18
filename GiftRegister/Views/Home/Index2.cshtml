@@ -1,0 +1,322 @@
+﻿@model GiftRegister.Models.GiftGivenModel
+@{
+    ViewBag.Title = "Index";
+}
+
+<script>
+            $(function() {
+                var message = "@ViewBag.Message";
+                if(message === "false") {
+                    Swal.fire({
+                        position: 'top',
+                        icon: 'error',
+                        title: 'Email Sending Failed!',
+                        showConfirmButton: true
+                    });
+                }
+                if (message === "true") {
+                    Swal.fire({
+                        position: 'top',
+                        title: 'Email Sent Successfully!',
+                        icon: 'success',
+                        showConfirmButton: true
+                    });
+                }
+            });
+</script>
+
+<script>
+    $(function () {
+        $("#datepicker").datepicker();
+    });
+    //$(function () {
+    //    $("#datepicker").datepicker({
+
+    //    });
+    //});
+    function reloadPage() {
+        location.reload(true);
+    }
+  
+
+</script>
+<script>
+    //var SendEmail = functoion(){
+    //    $.ajax({
+    //        type: "Post",
+    //        url: /Home/SendMailToUser,
+    //        success: function (data) {
+    //            alert("Succerss");
+    //        }
+
+    //});
+
+    
+ $(document).ready(function () {
+
+     $('body').on('click', '#givebtn', function () {
+         $.ajax({
+             url: '/Home/SendMailToUser',
+             type: "POST",
+             dataType: "json",
+            
+             success: function (data) {
+                 alert("Succerss");
+             }
+        
+     });
+</script>
+<script src="~/Scripts/Gift_Register.js"></script>
+<script src="~/Scripts/jquery.unobtrusive-ajax.js"></script>
+<script src="~/Scripts/jquery-1.9.1.js"></script>
+<script src="~/Scripts/bootstrap.js"></script>
+<link href="~/Content/bootstrap.css" rel="stylesheet" />
+<script src="~/Scripts/jquery.unobtrusive-ajax.js"></script>
+<link href="~/Content/Gifts.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+<link rel="stylesheet" href="/resources/demos/style.css">
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<div class="container" style="margin-top:100px;">
+
+    <div class="jumbotron text-center">
+        <h1>
+            <i class="fa fa-gift giftIcon" aria-hidden="true"></i>
+
+        </h1>
+        @*<h2>Gift Register</h2>*@
+
+    </div>
+
+    <div class="row">
+
+        <div class="col-lg-6 col-xs-12">
+            <!--<div class="small-box bg-purple" id="giving" data-toggle="modal" data-target="#myModal" onclick="RedirectToGive();">-->
+
+            <div class="small-box bg-purple" id="giving" data-toggle="modal" data-target="#myModal" onclick="clearTextBox();">
+
+                <div class="inner">
+                    <i id="giftGive" class="fa fa-gift" aria-hidden="true"></i>
+                    <h4 style="margin-left:20%; padding-bottom:5%; color:#fff;">
+                        I am declaring a gift that I have given
+                    </h4>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="col-lg-6 col-xs-12">
+            <div class="small-box bg-blue" id="receiving" data-toggle="modal" data-target="#myModal" onclick="clearTextBox();">
+                <div class="inner">
+                    <i id="giftReceive" class="fa fa-gift" aria-hidden="true"></i>
+                    <h4 style="margin-left:20%; padding-bottom:5%; color:#fff;">
+                        I am declaring a gift that I have received
+                    </h4>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" style="position: initial;">
+        <div class="modal-content">
+            <div class="modal-header btn-primary">
+
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title" id="myModalLabel">NEW GIFT GIVEN</h4>
+            </div>
+            @*@using (Html.BeginForm("Post", "Gifts", FormMethod.Post))
+            {*@
+                <div class="modal-body">
+
+                    @Html.AntiForgeryToken()
+                    <form name="myForm" >
+                    <!--<div class="form-group">
+                <label for="EmployeeId">ID</label>
+                <input type="text" class="form-control" id="EmployeeID" placeholder="Id" disabled="disabled" />
+            </div-->
+                    <div class="form-group">
+                        <label for="Name">Name Of Employee</label>
+
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                            <input type="text" class="form-control" name="NameOfEmployee" id="NameOfEmployee" placeholder="Enter Employee Name..." required />
+                            @*@Html.EditorFor(model => model.NameOfEmployee, new { htmlAttributes = new { @class = "form-control", @placeholder = "Enter Employee Name..." } })*@
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="Date">Date Gift Was Given</label>
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+
+                            <input type="text" id="datepicker" name="Date" required class="datep">
+                            @*@Html.EditorFor(model => model.DateGiftWasGiven, new { htmlAttributes = new { id = "datepicker", @class = "form-control", @placeholder = "Enter date..." } })*@
+                            @*@Html.TextBoxFor(model => model.DateGiftWasGiven, new { id = "datepicker" })*@
+                        </div>
+                    </div>
+                        <div class="form-group">
+                            <label for="DescriptionOfGiftGive">Description Of Gift Given</label>
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+                                <input type="text" class="form-control" name="DescriptionOfGiftGive" required id="DescriptionOfGiftGive" />
+                                @*@Html.EditorFor(model => model.DescriptionOfGiftGiven, new { htmlAttributes = new { @class = "form-control" } })*@
+                            </div>
+                        </div>
+                   
+                
+                    <div class="form-group">
+                        <label for="GiftGivenTo">Gift Given To(name and company)</label>
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+                            <input type="text" class="form-control" name="GiftGivenTo" id="GiftGivenTo" required placeholder="Enter name or company..." />
+                            @*@Html.EditorFor(model => model.GiftGivenTo, new { htmlAttributes = new { @class = "form-control", @placeholder = "Enter name or company..." } })*@
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="ActualCost">Actual Cost</label>
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+                            <input type="text" class="form-control" name="ActualCost" id="ActualCost" required placeholder="Actual Cost" />
+                            @*@Html.EditorFor(model => model.ActualCost, new { htmlAttributes = new { @class = "form-control", @placeholder = "Enter Actual Cost..." } })*@
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+
+                        <button type="submit" class="btn btn-primary" id="givebtn" value="Submit" >Submit <span class="glyphicon glyphicon-send"></span></button>
+                        @*<input type="submit" value="Create" id="Submit" class="btn btn-default" onclick="location.href='@Url.Action("GetStudents", "CreateStudent11")'" />*@
+
+                        <button type="button" class="btn btn-dangert" data-dismiss="modal">Close</button>
+                    </div>
+
+                    </form>
+                    
+                    <a class=" btn btn-danger" onclick="SendEmail()">Click to send email</a>
+                </div>
+            @*}*@
+
+            </div>
+    </div>
+</div>
+<div class="modal fade  preview-modal" data-backdrop="" id="basic" role="dialog" aria-labActualCostelledby="basic" aria-hidden="true">
+    <div class="modal-dialog  modal-sm">
+        <div class="modal-content" style="background-color: #ffffff; borderolid 4px #44d775; margin-top: 253px; left: -825px; ">
+
+            <div class="modal-header" style="background-color:#44d775; height:15px;">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true" style="margin-top:-12px;">x</button>
+                <span class="glyphicon glyphicon-ok" style="color:yellow; font-size:large; top:-10px; left:115px;" aria-hidden="true"></span>
+                <h4 class="modal-title" id="myModalLabel" style="text-align:center;"></h4>
+            </div>
+            <p style="text-align:center; font-family:'Ebrima'; color:black; margin-top:15px;"> <strong> Gift Saved Successfully </strong></p>
+        </div>
+    </div>
+</div>
+
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script type="text/javascript">
+    $(function () {
+        $("#givebtndd").click(function () {
+            alert("success");
+            $.ajax({
+                type: "POST",
+                url: "/Gifts/Post",
+                /* data: '{name: "' + $("#NameOfEmployee").val() + ', "Date: "' + $("#datepicker").val() + '" , "Date: "' + $("#DescriptionOfGiftGive").val() + '" , "Date: "' + $("#GiftGivenTo").val() + '" , "Date: "' + $("#ActualCost").val() + '" }',*/
+                data: { Prefix: request.term },
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                success: function (response) {
+                    alert("Hello: " + response.Name + " .\nCurrent Date and Time: " + response.DateTime);
+                },
+                failure: function (response) {
+                    alert(response.responseText);
+                },
+                error: function (response) {
+                    alert(response.responseText);
+                }
+            });
+        });
+    });
+</script>
+
+<script>
+
+    $(document).ready(function () {
+
+        $('body').on('click', '#receivebtn', function () {
+            $('#basic').modal('show');
+            setTimeout(function () {
+                $("#basic").hide();
+
+            }, 8000);
+            window.location.href = '/Home/Index';
+        });
+
+        $('body').on('click', '#givebtn', function () {
+            $('#basic').modal('show');
+            setTimeout(function () {
+                $("#basic").hide();
+
+            }, 8000);
+            window.location.href = '/Home/Index';
+        });
+
+        $("#to").autocomplete({
+            source: function (request, response) {
+                $.ajax({
+                    url: '/GiftRegister/Home/GetName',
+                    type: "POST",
+                    dataType: "json",
+                    data: { Prefix: request.term },
+                    success: function (data) {
+                        response($.map(data, function (item) {
+                            return { label: item.firstName + "  " + item.lastName, value: item.firstName + "  " + item.lastName, id: item.samAccountName };
+                        }));
+                    }
+                });
+
+            },
+            messages: {
+                noResults: "", results: ""
+            },
+            select: function (event, ui) {
+                $("#hiddenFieldTo").val(ui.item.id);
+            }
+        });
+
+        $("#from").autocomplete({
+            source: function (request, response) {
+                $.ajax({
+                    url: '/GiftRegister/Home/GetName',
+                    type: "POST",
+                    dataType: "json",
+                    data: { Prefix: request.term },
+                    success: function (data) {
+                        response($.map(data, function (item) {
+                            return { label: item.firstName + "  " + item.lastName, value: item.firstName + "  " + item.lastName, id: item.samAccountName };
+                        }));
+                    }
+                });
+
+            },
+            messages: {
+                noResults: "", results: ""
+            },
+            select: function (event, ui) {
+                $("#hiddenFieldFrom").val(ui.item.id);
+            }
+        });
+
+
+
+
+    });
+</script>

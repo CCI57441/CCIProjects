@@ -1,0 +1,165 @@
+c:\users\cci22842\documents\visual studio 2015\Projects\GiftRegister\GiftRegister\bin\ApplicationInsights.config
+c:\users\cci22842\documents\visual studio 2015\Projects\GiftRegister\GiftRegister\bin\roslyn\csc.exe
+c:\users\cci22842\documents\visual studio 2015\Projects\GiftRegister\GiftRegister\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+c:\users\cci22842\documents\visual studio 2015\Projects\GiftRegister\GiftRegister\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+c:\users\cci22842\documents\visual studio 2015\Projects\GiftRegister\GiftRegister\bin\roslyn\Microsoft.CodeAnalysis.dll
+c:\users\cci22842\documents\visual studio 2015\Projects\GiftRegister\GiftRegister\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+c:\users\cci22842\documents\visual studio 2015\Projects\GiftRegister\GiftRegister\bin\roslyn\Microsoft.CSharp.Core.targets
+c:\users\cci22842\documents\visual studio 2015\Projects\GiftRegister\GiftRegister\bin\roslyn\Microsoft.VisualBasic.Core.targets
+c:\users\cci22842\documents\visual studio 2015\Projects\GiftRegister\GiftRegister\bin\roslyn\System.Collections.Immutable.dll
+c:\users\cci22842\documents\visual studio 2015\Projects\GiftRegister\GiftRegister\bin\roslyn\System.Reflection.Metadata.dll
+c:\users\cci22842\documents\visual studio 2015\Projects\GiftRegister\GiftRegister\bin\roslyn\vbc.exe
+c:\users\cci22842\documents\visual studio 2015\Projects\GiftRegister\GiftRegister\bin\roslyn\VBCSCompiler.exe
+c:\users\cci22842\documents\visual studio 2015\Projects\GiftRegister\GiftRegister\bin\roslyn\VBCSCompiler.exe.config
+c:\users\cci22842\documents\visual studio 2015\Projects\GiftRegister\GiftRegister\bin\GiftRegister.dll.config
+c:\users\cci22842\documents\visual studio 2015\Projects\GiftRegister\GiftRegister\bin\GiftRegister.dll
+c:\users\cci22842\documents\visual studio 2015\Projects\GiftRegister\GiftRegister\bin\GiftRegister.pdb
+c:\users\cci22842\documents\visual studio 2015\Projects\GiftRegister\GiftRegister\bin\Antlr3.Runtime.dll
+c:\users\cci22842\documents\visual studio 2015\Projects\GiftRegister\GiftRegister\bin\EntityFramework.dll
+c:\users\cci22842\documents\visual studio 2015\Projects\GiftRegister\GiftRegister\bin\EntityFramework.SqlServer.dll
+c:\users\cci22842\documents\visual studio 2015\Projects\GiftRegister\GiftRegister\bin\Microsoft.AI.Agent.Intercept.dll
+c:\users\cci22842\documents\visual studio 2015\Projects\GiftRegister\GiftRegister\bin\Microsoft.AI.DependencyCollector.dll
+c:\users\cci22842\documents\visual studio 2015\Projects\GiftRegister\GiftRegister\bin\Microsoft.AI.PerfCounterCollector.dll
+c:\users\cci22842\documents\visual studio 2015\Projects\GiftRegister\GiftRegister\bin\Microsoft.AI.ServerTelemetryChannel.dll
+c:\users\cci22842\documents\visual studio 2015\Projects\GiftRegister\GiftRegister\bin\Microsoft.AI.Web.dll
+c:\users\cci22842\documents\visual studio 2015\Projects\GiftRegister\GiftRegister\bin\Microsoft.AI.WindowsServer.dll
+c:\users\cci22842\documents\visual studio 2015\Projects\GiftRegister\GiftRegister\bin\Microsoft.ApplicationInsights.dll
+c:\users\cci22842\documents\visual studio 2015\Projects\GiftRegister\GiftRegister\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+c:\users\cci22842\documents\visual studio 2015\Projects\GiftRegister\GiftRegister\bin\Microsoft.Web.Infrastructure.dll
+c:\users\cci22842\documents\visual studio 2015\Projects\GiftRegister\GiftRegister\bin\Newtonsoft.Json.dll
+c:\users\cci22842\documents\visual studio 2015\Projects\GiftRegister\GiftRegister\bin\Ninject.dll
+c:\users\cci22842\documents\visual studio 2015\Projects\GiftRegister\GiftRegister\bin\Ninject.Web.Common.dll
+c:\users\cci22842\documents\visual studio 2015\Projects\GiftRegister\GiftRegister\bin\Ninject.Web.Mvc.dll
+c:\users\cci22842\documents\visual studio 2015\Projects\GiftRegister\GiftRegister\bin\System.Net.Http.Formatting.dll
+c:\users\cci22842\documents\visual studio 2015\Projects\GiftRegister\GiftRegister\bin\System.Web.Helpers.dll
+c:\users\cci22842\documents\visual studio 2015\Projects\GiftRegister\GiftRegister\bin\System.Web.Http.dll
+c:\users\cci22842\documents\visual studio 2015\Projects\GiftRegister\GiftRegister\bin\System.Web.Http.WebHost.dll
+c:\users\cci22842\documents\visual studio 2015\Projects\GiftRegister\GiftRegister\bin\System.Web.Mvc.dll
+c:\users\cci22842\documents\visual studio 2015\Projects\GiftRegister\GiftRegister\bin\System.Web.Optimization.dll
+c:\users\cci22842\documents\visual studio 2015\Projects\GiftRegister\GiftRegister\bin\System.Web.Razor.dll
+c:\users\cci22842\documents\visual studio 2015\Projects\GiftRegister\GiftRegister\bin\System.Web.WebPages.Deployment.dll
+c:\users\cci22842\documents\visual studio 2015\Projects\GiftRegister\GiftRegister\bin\System.Web.WebPages.dll
+c:\users\cci22842\documents\visual studio 2015\Projects\GiftRegister\GiftRegister\bin\System.Web.WebPages.Razor.dll
+c:\users\cci22842\documents\visual studio 2015\Projects\GiftRegister\GiftRegister\bin\WebActivatorEx.dll
+c:\users\cci22842\documents\visual studio 2015\Projects\GiftRegister\GiftRegister\bin\WebApiContrib.IoC.Ninject.dll
+c:\users\cci22842\documents\visual studio 2015\Projects\GiftRegister\GiftRegister\bin\WebGrease.dll
+c:\users\cci22842\documents\visual studio 2015\Projects\GiftRegister\GiftRegister\bin\EntityFramework.xml
+c:\users\cci22842\documents\visual studio 2015\Projects\GiftRegister\GiftRegister\bin\EntityFramework.SqlServer.xml
+c:\users\cci22842\documents\visual studio 2015\Projects\GiftRegister\GiftRegister\bin\Microsoft.AI.DependencyCollector.xml
+c:\users\cci22842\documents\visual studio 2015\Projects\GiftRegister\GiftRegister\bin\Microsoft.AI.ServerTelemetryChannel.xml
+c:\users\cci22842\documents\visual studio 2015\Projects\GiftRegister\GiftRegister\bin\Microsoft.AI.Web.xml
+c:\users\cci22842\documents\visual studio 2015\Projects\GiftRegister\GiftRegister\bin\Microsoft.AI.WindowsServer.xml
+c:\users\cci22842\documents\visual studio 2015\Projects\GiftRegister\GiftRegister\bin\Microsoft.ApplicationInsights.xml
+c:\users\cci22842\documents\visual studio 2015\Projects\GiftRegister\GiftRegister\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+c:\users\cci22842\documents\visual studio 2015\Projects\GiftRegister\GiftRegister\bin\Ninject.xml
+c:\users\cci22842\documents\visual studio 2015\Projects\GiftRegister\GiftRegister\bin\Ninject.Web.Common.xml
+c:\users\cci22842\documents\visual studio 2015\Projects\GiftRegister\GiftRegister\bin\Ninject.Web.Mvc.xml
+c:\users\cci22842\documents\visual studio 2015\Projects\GiftRegister\GiftRegister\bin\System.Net.Http.Formatting.xml
+c:\users\cci22842\documents\visual studio 2015\Projects\GiftRegister\GiftRegister\bin\System.Web.Http.xml
+c:\users\cci22842\documents\visual studio 2015\Projects\GiftRegister\GiftRegister\bin\System.Web.Http.WebHost.xml
+c:\users\cci22842\documents\visual studio 2015\Projects\GiftRegister\GiftRegister\bin\System.Web.Helpers.xml
+c:\users\cci22842\documents\visual studio 2015\Projects\GiftRegister\GiftRegister\bin\System.Web.Mvc.xml
+c:\users\cci22842\documents\visual studio 2015\Projects\GiftRegister\GiftRegister\bin\System.Web.Optimization.xml
+c:\users\cci22842\documents\visual studio 2015\Projects\GiftRegister\GiftRegister\bin\System.Web.Razor.xml
+c:\users\cci22842\documents\visual studio 2015\Projects\GiftRegister\GiftRegister\bin\System.Web.WebPages.xml
+c:\users\cci22842\documents\visual studio 2015\Projects\GiftRegister\GiftRegister\bin\System.Web.WebPages.Deployment.xml
+c:\users\cci22842\documents\visual studio 2015\Projects\GiftRegister\GiftRegister\bin\System.Web.WebPages.Razor.xml
+c:\users\cci22842\documents\visual studio 2015\Projects\GiftRegister\GiftRegister\bin\Antlr3.Runtime.pdb
+c:\users\cci22842\documents\visual studio 2015\Projects\GiftRegister\GiftRegister\bin\Newtonsoft.Json.xml
+c:\users\cci22842\documents\visual studio 2015\Projects\GiftRegister\GiftRegister\obj\Debug\GiftRegister.dll
+c:\users\cci22842\documents\visual studio 2015\Projects\GiftRegister\GiftRegister\obj\Debug\GiftRegister.pdb
+C:\Systems\GiftRegister\GiftRegister\bin\ApplicationInsights.config
+C:\Systems\GiftRegister\GiftRegister\bin\roslyn\csc.exe
+C:\Systems\GiftRegister\GiftRegister\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Systems\GiftRegister\GiftRegister\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Systems\GiftRegister\GiftRegister\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Systems\GiftRegister\GiftRegister\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Systems\GiftRegister\GiftRegister\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Systems\GiftRegister\GiftRegister\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Systems\GiftRegister\GiftRegister\bin\roslyn\System.Collections.Immutable.dll
+C:\Systems\GiftRegister\GiftRegister\bin\roslyn\System.Reflection.Metadata.dll
+C:\Systems\GiftRegister\GiftRegister\bin\roslyn\vbc.exe
+C:\Systems\GiftRegister\GiftRegister\bin\roslyn\VBCSCompiler.exe
+C:\Systems\GiftRegister\GiftRegister\bin\roslyn\VBCSCompiler.exe.config
+C:\Systems\GiftRegister\GiftRegister\bin\GiftRegister.dll.config
+C:\Systems\GiftRegister\GiftRegister\bin\GiftRegister.dll
+C:\Systems\GiftRegister\GiftRegister\bin\GiftRegister.pdb
+C:\Systems\GiftRegister\GiftRegister\bin\Antlr3.Runtime.dll
+C:\Systems\GiftRegister\GiftRegister\bin\EntityFramework.dll
+C:\Systems\GiftRegister\GiftRegister\bin\EntityFramework.SqlServer.dll
+C:\Systems\GiftRegister\GiftRegister\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Systems\GiftRegister\GiftRegister\bin\Microsoft.AI.DependencyCollector.dll
+C:\Systems\GiftRegister\GiftRegister\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Systems\GiftRegister\GiftRegister\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Systems\GiftRegister\GiftRegister\bin\Microsoft.AI.Web.dll
+C:\Systems\GiftRegister\GiftRegister\bin\Microsoft.AI.WindowsServer.dll
+C:\Systems\GiftRegister\GiftRegister\bin\Microsoft.ApplicationInsights.dll
+C:\Systems\GiftRegister\GiftRegister\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Systems\GiftRegister\GiftRegister\bin\Microsoft.Web.Infrastructure.dll
+C:\Systems\GiftRegister\GiftRegister\bin\Newtonsoft.Json.dll
+C:\Systems\GiftRegister\GiftRegister\bin\Ninject.dll
+C:\Systems\GiftRegister\GiftRegister\bin\Ninject.Web.Common.dll
+C:\Systems\GiftRegister\GiftRegister\bin\Ninject.Web.Mvc.dll
+C:\Systems\GiftRegister\GiftRegister\bin\System.Net.Http.Formatting.dll
+C:\Systems\GiftRegister\GiftRegister\bin\System.Web.Helpers.dll
+C:\Systems\GiftRegister\GiftRegister\bin\System.Web.Http.dll
+C:\Systems\GiftRegister\GiftRegister\bin\System.Web.Http.WebHost.dll
+C:\Systems\GiftRegister\GiftRegister\bin\System.Web.Mvc.dll
+C:\Systems\GiftRegister\GiftRegister\bin\System.Web.Optimization.dll
+C:\Systems\GiftRegister\GiftRegister\bin\System.Web.Razor.dll
+C:\Systems\GiftRegister\GiftRegister\bin\System.Web.WebPages.Deployment.dll
+C:\Systems\GiftRegister\GiftRegister\bin\System.Web.WebPages.dll
+C:\Systems\GiftRegister\GiftRegister\bin\System.Web.WebPages.Razor.dll
+C:\Systems\GiftRegister\GiftRegister\bin\WebActivatorEx.dll
+C:\Systems\GiftRegister\GiftRegister\bin\WebApiContrib.IoC.Ninject.dll
+C:\Systems\GiftRegister\GiftRegister\bin\WebGrease.dll
+C:\Systems\GiftRegister\GiftRegister\bin\EntityFramework.xml
+C:\Systems\GiftRegister\GiftRegister\bin\EntityFramework.SqlServer.xml
+C:\Systems\GiftRegister\GiftRegister\bin\Microsoft.AI.DependencyCollector.xml
+C:\Systems\GiftRegister\GiftRegister\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Systems\GiftRegister\GiftRegister\bin\Microsoft.AI.Web.xml
+C:\Systems\GiftRegister\GiftRegister\bin\Microsoft.AI.WindowsServer.xml
+C:\Systems\GiftRegister\GiftRegister\bin\Microsoft.ApplicationInsights.xml
+C:\Systems\GiftRegister\GiftRegister\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Systems\GiftRegister\GiftRegister\bin\Ninject.xml
+C:\Systems\GiftRegister\GiftRegister\bin\Ninject.Web.Common.xml
+C:\Systems\GiftRegister\GiftRegister\bin\Ninject.Web.Mvc.xml
+C:\Systems\GiftRegister\GiftRegister\bin\System.Net.Http.Formatting.xml
+C:\Systems\GiftRegister\GiftRegister\bin\System.Web.Http.xml
+C:\Systems\GiftRegister\GiftRegister\bin\System.Web.Http.WebHost.xml
+C:\Systems\GiftRegister\GiftRegister\bin\System.Web.Helpers.xml
+C:\Systems\GiftRegister\GiftRegister\bin\System.Web.Mvc.xml
+C:\Systems\GiftRegister\GiftRegister\bin\System.Web.Optimization.xml
+C:\Systems\GiftRegister\GiftRegister\bin\System.Web.Razor.xml
+C:\Systems\GiftRegister\GiftRegister\bin\System.Web.WebPages.xml
+C:\Systems\GiftRegister\GiftRegister\bin\System.Web.WebPages.Deployment.xml
+C:\Systems\GiftRegister\GiftRegister\bin\System.Web.WebPages.Razor.xml
+C:\Systems\GiftRegister\GiftRegister\bin\Antlr3.Runtime.pdb
+C:\Systems\GiftRegister\GiftRegister\bin\Newtonsoft.Json.xml
+C:\Systems\GiftRegister\GiftRegister\obj\Debug\GiftRegister.dll
+C:\Systems\GiftRegister\GiftRegister\obj\Debug\GiftRegister.pdb
+C:\Users\CCI57441\WorkArea\GiftRegister\GiftRegister\bin\ApplicationInsights.config
+C:\Users\CCI57441\WorkArea\GiftRegister\GiftRegister\bin\roslyn\csc.exe
+C:\Users\CCI57441\WorkArea\GiftRegister\GiftRegister\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\CCI57441\WorkArea\GiftRegister\GiftRegister\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\CCI57441\WorkArea\GiftRegister\GiftRegister\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\CCI57441\WorkArea\GiftRegister\GiftRegister\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\CCI57441\WorkArea\GiftRegister\GiftRegister\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\CCI57441\WorkArea\GiftRegister\GiftRegister\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\CCI57441\WorkArea\GiftRegister\GiftRegister\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\CCI57441\WorkArea\GiftRegister\GiftRegister\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\CCI57441\WorkArea\GiftRegister\GiftRegister\bin\roslyn\vbc.exe
+C:\Users\CCI57441\WorkArea\GiftRegister\GiftRegister\bin\roslyn\VBCSCompiler.exe
+C:\Users\CCI57441\WorkArea\GiftRegister\GiftRegister\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\CCI57441\WorkArea\GiftRegister\GiftRegister\bin\GiftRegister.dll.config
+C:\Users\CCI57441\WorkArea\GiftRegister\GiftRegister\bin\GiftRegister.dll
+C:\Users\CCI57441\WorkArea\GiftRegister\GiftRegister\bin\GiftRegister.pdb
+C:\Users\CCI57441\WorkArea\GiftRegister\GiftRegister\bin\Antlr3.Runtime.dll
+C:\Users\CCI57441\WorkArea\GiftRegister\GiftRegister\bin\Newtonsoft.Json.dll
+C:\Users\CCI57441\WorkArea\GiftRegister\GiftRegister\bin\WebGrease.dll
+C:\Users\CCI57441\WorkArea\GiftRegister\GiftRegister\bin\Antlr3.Runtime.pdb
+C:\Users\CCI57441\WorkArea\GiftRegister\GiftRegister\obj\Debug\GiftRegister.csproj.CoreCompileInputs.cache
+C:\Users\CCI57441\WorkArea\GiftRegister\GiftRegister\obj\Debug\GiftRegister.csproj.CopyComplete
+C:\Users\CCI57441\WorkArea\GiftRegister\GiftRegister\obj\Debug\GiftRegister.dll
+C:\Users\CCI57441\WorkArea\GiftRegister\GiftRegister\obj\Debug\GiftRegister.pdb
+C:\Users\CCI57441\WorkArea\GiftRegister\GiftRegister\obj\Debug\GiftRegister.csproj.AssemblyReference.cache

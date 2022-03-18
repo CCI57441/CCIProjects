@@ -1,0 +1,80 @@
+﻿
+<style>
+    #giving {
+        border-radius: 5px;
+        -webkit-box-shadow: 0px 1px 0px 0px #222; /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+        -moz-box-shadow: 0px 1px 0px 0px #222; /* Firefox 3.5 - 3.6 */
+        box-shadow: 0px 1px 0px 0px #222; /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+    }
+
+    #receiving {
+        border-radius: 5px;
+        -webkit-box-shadow: 0px 1px 0px 0px #222; /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+        -moz-box-shadow: 0px 1px 0px 0px #222; /* Firefox 3.5 - 3.6 */
+        box-shadow: 0px 1px 0px 0px #222; /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+    }
+
+    #giving:hover {
+        opacity: 0.7;
+        border: solid 1px purple;
+        color: purple !important;
+        cursor: pointer;
+    }
+
+    #receiving:hover {
+        opacity: 0.7;
+        border: solid 1px blue;
+        color: blue !important;
+        cursor: pointer;
+    }
+
+    #giftGive {
+        color: #fff;
+        font-size: 20px;
+    }
+
+    #giftReceive {
+        color: #fff;
+        font-size: 20px;
+    }
+</style>
+<div class="container" style="margin-top:100px;">
+
+    <div class="jumbotron text-center">
+        <h1>
+            <i style="color:#121f47; font-size:200px;" class="fa fa-gift" aria-hidden="true"></i>
+        </h1>
+        <h2>Gift Register</h2>
+
+    </div>
+
+
+    <div class="row">
+
+        <div class="col-lg-6 col-xs-12">
+            <div class="small-box bg-purple" id="giving" onclick="RedirectToGive();">
+                <div class="inner">
+                    <i id="giftGive" class="fa fa-gift" aria-hidden="true"></i>
+                    <h4 style="margin-left:20%; padding-bottom:5%; color:#fff;">
+                        I am declaring a gift that I have given
+                    </h4>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="col-lg-6 col-xs-12">
+            <div class="small-box bg-blue" id="receiving" onclick="RedirectToReceive();">
+                <div class="inner">
+                    <i id="giftReceive" class="fa fa-gift" aria-hidden="true"></i>
+                    <h4 style="margin-left:20%; padding-bottom:5%; color:#fff;">
+                        I am declaring a gift that I have received
+                    </h4>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+</div>

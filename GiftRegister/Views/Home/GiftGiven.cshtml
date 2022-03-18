@@ -1,0 +1,314 @@
+﻿
+@{
+    ViewBag.Title = "GiftGiven";
+}
+
+<script src="~/Scripts/Gift_Register.js"></script>
+<script src="~/Scripts/jquery.unobtrusive-ajax.js"></script>
+<script src="~/Scripts/jquery-1.9.1.js"></script>
+<script src="~/Scripts/bootstrap.js"></script>
+<link href="~/Content/bootstrap.css" rel="stylesheet" />
+<script src="~/Scripts/jquery.unobtrusive-ajax.js"></script>
+<link rel="stylesheet" href="~/Content/AdminLTE/AdminLTE.css" />
+<link rel="stylesheet" href="~/Content/AdminLTE/AdminLTE.min.css" />
+<link href="~/Content/Gifts.css" rel="stylesheet" />
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+@*<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">*@
+<link href="~/Content/font-awesome.min.css" rel="stylesheet" />
+<link type="text/css" rel="stylesheet" href="~/Content/bootstrap.css" />
+<link type="text/css" rel="stylesheet" href="~/Content/bootstrap.min.css" />
+<link rel="stylesheet" href="~/Content/ionicons/css/ionicons.css">
+<link rel="stylesheet" href="~/Content/ionicons/css/ionicons.min.css">
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+
+<script type="text/javascript" src="https://ajax.cdnjs.com/ajax/libs/json2/20110223/json2.js"></script>
+<script>
+    $(document).ready(function () {
+        $("#SubmitForm").validate({
+            rules: {
+                NameOfEmployee: {
+                    required: true,
+                    minlength: 3
+                },
+                datepicker: {
+                    required: true,
+                    number: true,
+                    min: 18
+                },
+                DescriptionOfGiftGiven: {
+                    required: true,
+                    email: true
+                },
+                to: {
+                    required: true,
+                    email: true
+                },
+                ActualCost: {
+                    required: true,
+                    email: true
+                },
+                weight: {
+                    required: {
+                        depends: function (elem) {
+                            return $("#age").val() > 50
+                        }
+                    },
+                    number: true,
+                    min: 0
+                }
+            },
+            messages: {
+                NameOfEmployee: {
+                    required: "Please enter Employee code"
+
+
+                },
+                datepicker: {
+                    required: "Please enter date"
+
+                },
+                DescriptionOfGiftGiven: {
+                    required: "Please enter Description Of Gift Given"
+
+                },
+                to: {
+                    required: "Please enter name of Gift Given To"
+
+                },
+                ActualCost: {
+                    required: "Please enter cost",
+
+                }
+
+            }
+        });
+    });
+</script>
+
+
+<script>
+    $(function () {
+        $("#datepicker").datepicker();
+    });
+
+
+
+</script>
+
+
+
+<script>
+    $(document).ready(function () {
+
+
+        $('body').on('click', '#receivebtn', function () {
+            $('#basic').modal('show');
+            setTimeout(function () {
+                $("#basic").hide();
+
+            }, 8000);
+            // window.location.href = '/Home/Index';
+        });
+
+        $('body').on('click', '#SaveGiftRecord', function () {
+
+            $('#basicGiven').modal('show');
+            setTimeout(function () {
+                $("#basicGiven").hide();
+
+            }, 8000);
+
+            //window.location.href = '/Home/Index';
+        });
+
+
+        $('body').on('click', '#BackToLanding', function () {
+
+            window.location.href = '/Home/Index';
+        });
+
+    });
+</script>
+
+
+
+
+<div class="container shadow-lg p-5 mb-5 bg-white rounded" style="margin-top:100px;">
+    <div class="modal-header btn-primary">
+
+
+        <h4 class="modal-title" id="myModalLabel">NEW GIFT GIVEN</h4>
+    </div>
+    <form class="well form-horizontal" id="SubmitForm" method="post" action="GiftGiven" name="newGiftGivenForm" autocomplete="off">
+
+
+        <div class="form-group" style="display:none;">
+            <label class="col-md-4 control-label">Entry Date </label>
+            <div class="col-md-4 inputGroupContainer">
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+                    <input name="Date" type="text" id="giveDate" />
+                    <input name="EmployeeCode" type="text" id="EmployeeCode" value="@ViewBag.empcode" />
+                    <input name="Firstname" type="text" id="Firstname" value="@ViewBag.fname" />
+                    <input name="Surname" type="text" id="Surname" value="@ViewBag.sName" />
+
+
+                </div>
+            </div>
+        </div>
+        <!--<input type="text" ng-model="date" mydatepicker />-->
+        <div class="form-group">
+            <label class="col-md-4 control-label">Name Of Employee</label>
+            <div class="col-md-4 inputGroupContainer">
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                    <input class="form-control input-md" name="NameOfEmployee" id="NameOfEmployee" type="text" value="@ViewBag.Name" placeholder="Enter Employee Name..." required /><span style="color:red">*</span>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="col-md-4 control-label">Date Gift Was Given</label>
+            <div class="col-md-4 inputGroupContainer">
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+                    <input class="form-control input-md" name="DateGiftWasGiven" type="text" id="datepicker" placeholder="Enter Date Gift Was Given..."  />
+
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="form-group">
+            <label class="col-md-4 control-label">Description Of Gift Given</label>
+            <div class="col-md-4 inputGroupContainer">
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+                    <input class="form-control input-md" name="DescriptionOfGiftGiven" id="DescriptionOfGiftGiven" placeholder="Enter Description Of Gift Given..." required /><span style="color:red"> *</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="col-md-4 control-label">Enter Name and Company</label>
+            <div class="col-md-4 inputGroupContainer">
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                    <input class="form-control input-md" name="GiftGivenTo" id="to" type="text" placeholder="Enter Name and Company..." required><span style="color:red"> *</span>
+                    <div class="error"></div>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-md-4 control-label">Actual/Estimated Rand Value (ZAR)</label>
+            <div class="col-md-4 inputGroupContainer">
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+                    <input class="form-control input-md" name="ActualCost" id="ActualCost" type="number" placeholder="Enter Estimated Rand Value..."  data-ng-model="newGiftGiven.ActualCost" required /><span style="color:red"> *</span>
+
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-md-4 control-label"></label>
+            <div class="col-md-4">
+                <div id="email_submit">
+                    <button style="float:left;" type="submit" id="SaveGiftRecord" class="btn btn-primary" onclick="return Add();">
+                        Send <span class="glyphicon glyphicon-send"></span>
+                    </button>
+
+                    @*<input style="float:left; margin-left:50%;" runat="server" id="BackToLanding" class="btn btn-danger">Close</button>*@
+                    <input type="button" style="float: right; float: right; position: absolute; left: 265px;" value="Close" class="btn btn-danger" onclick="location.href='@Url.Action("Close", "Home")'" />
+                </div>
+            </div>
+
+        </div>
+        @if (ViewBag.Error != null)
+        {
+
+            <h5 style="color:red">@ViewBag.Error</h5>
+        }
+        <input type="hidden" id="hiddenFieldTo" name="hiddenFieldTo" value="">
+
+    </form>
+</div>
+<div class="modal fade  preview-modal" data-backdrop="" id="basicGiven1" role="dialog" aria-labActualCostelledby="basic" aria-hidden="true">
+    <div class="modal-dialog  modal-sm">
+        <div class="modal-content" style="background-color: #ffffff; borderolid 4px #44d775; margin-top: 253px; left: -825px; ">
+
+            <div class="modal-header" style="background-color:#44d775; height:15px;">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true" style="margin-top:-12px;">x</button>
+                <span class="glyphicon glyphicon-ok" style="color:yellow; font-size:large; top:-10px; left:115px;" aria-hidden="true"></span>
+                <h4 class="modal-title" id="myModalLabel" style="text-align:center;"></h4>
+            </div>
+            <p style="text-align:center; font-family:'Ebrima'; color:black; margin-top:15px;"> <strong> Gift Saved Successfully </strong></p>
+        </div>
+    </div>
+</div>
+
+<script src="~/Scripts/Validation.js"></script>
+
+<script>
+
+    $(document).ready(function () {
+        var today = new Date();
+        var dd = today.getDate();
+        var mm = today.getMonth() + 1; //January is 0!
+
+        var yyyy = today.getFullYear();
+        if (dd < 10) {
+            dd = '0' + dd;
+        }
+        if (mm < 10) {
+            mm = '0' + mm;
+        }
+        var today = yyyy + '-' + mm + '-' + dd;
+
+        $.ajax({
+            type: "GET",
+            url: "/GiftRegister/Home/GetCurrentName",
+            data: "",
+            contenttype: "application/json; charset=utf-8",
+            datatype: "json",
+            success: function (data) {
+                $("#giveName").val(data);
+                $("#giveDate").val(today);
+            },
+            failure: function (response) {
+
+            }
+        });
+        $('body').on('click', '#SaveGiftRecord', function () {
+
+            $('#basicGiven').modal('show');
+            setTimeout(function () {
+                //$("#basic").hide();
+                $("#basicGiven .close").click()
+                //window.location.reload()
+                //window.location.href = "#/newGiftGiven";
+                // $("body").load(window.location.href, "#/newGiftGiven");
+            }, 500);
+        });
+
+    });
+
+</script>
